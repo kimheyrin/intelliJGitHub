@@ -1,0 +1,65 @@
+body {
+margin: 0; /*body의 바깥 여백을 없앰*/
+}
+
+h1 {
+margin-left:10px;
+color: #FF8E99;
+}
+
+.login a{
+float:right;
+margin-right:10px;
+cursor: pointer; /*마우스 커서를 pointer 모양*/
+text-decoration: none; /*밑줄 없앰*/
+color: #FF8E99;
+
+}
+
+.join a{
+float:right;
+margin-right:10px;
+cursor: pointer;
+text-decoration: none;
+color: #FF8E99;
+
+}
+
+.nav-container {
+display: flex; /*flex 박스로 보이기- 가로로 나란히 정렬*/
+justfy-content:space-between; /*중심을 잡고 공간 분배*/
+align-item: center;
+width: 100%;
+padding: 8px 12px;
+background-color: #FF8E99;
+list-style-type: none; /*목록 기호 제거*/
+}
+
+.nav-item:hover {  /*메뉴에 마우스 올렸을 때*/
+background-color: #FF5675;
+border-radius: 4px;
+}
+
+.nav-item {
+padding: 15px;
+cursor: pointer;
+}
+
+.nav-item a {
+text-align: center;
+text-decoration: none;
+color: white;
+}
+
+/*페이지가 좁아지면*/
+@media screen and (max-width: 600px) {
+.nav-container{
+flex-direction:column; /*세로로 정렬*/
+align-items: center;
+}
+
+.nav-item {
+width: 100%;
+text-align: center;
+}
+}
